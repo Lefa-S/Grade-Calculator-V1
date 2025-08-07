@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Grade Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="GradCalcIcon.png">
+    
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title">   
+        <header>
+            <h1>Grade Calculator South Africa 🇿🇦</h1>
+        </header>
+    </div>
+    
+    <p><b>A grade calculator made just for <span>South Africans!</span></b></p>
+
+    <div class="side-by-side">
+        <div >
+            <form class="assignment-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>Assignment/Exam Name</b>
+                            </td>
+                            <td>
+                                <b>Percentage</b>
+                            </td>
+                            <td>
+                                <b>Weight</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input  placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage1" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight1" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage2" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight2" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage3" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight3" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage4" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight4" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage5" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight5" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage6" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight6" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage7" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight7" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input placeholder="Optional" />
+                            </td>
+                            <td>
+                                <input type="number" id="Percentage8" min="0" class="number-input"/>
+                            </td>
+                            <td>
+                                <input type="number" id="Weight8" min="0" class="number-input"/> %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="CalculateButton" type="button">Calculate</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        
+        <div class="final-planning">
+            <h1>Final Grade Calculator</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b><label class="final-number-label">Current Grade</label></b>
+                        </td>
+                        <td>
+                            <b><label class="final-number-label">Grade you want</label></b>
+                        </td>
+                        <td>
+                            <b><label class="final-number-label">Final Grade Weight</label></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="CurrentGrade" min="0" class="final-number-input"/> %
+                        </td>
+                        <td>
+                            <input type="number" id="WantedFinalGrade" min="0" class="final-number-input"/> %
+                        </td>
+                        <td>
+                            <input type="number" id="FinalGradeWeight" min="0" class="final-number-input"/> %
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <br>
+                            </td>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="FinalCalculateButton" type="button">Calculate</button>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <br>
+        
+        <div class="result">
+            <h2>Result</h2>
+            <h3 id="Result">Results appear right here....</h3>
+        </div>
+
+<p style="color: black">📚 Not sure if you’re passing or just blomming? This calculator’s got you.
+Whether you're putting in work or rocking the CPF method (Cram, Pass, and Forget), it’ll show you what grade you need to survive.
+<br>
+— Made with code and last-minute motivation.
+Made by Mojalefa Sekgobela 🇿🇦</p>
+
+<p>Wanna know more about my projects? Check out my <a href="https://lefa-sekgobela-v2.vercel.app/index.html" target="_blank">portfolio!</a></p>
+        
+<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+p {
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Brush Script MT", cursive;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    color: green;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: red;
+  font-weight: 900;
+}
+
+body {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('Grade Calculator Background.jpg'); /* or a full URL */
+  background-size: cover;  /* Makes sure it fills the screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.assignment-table {
+  border: 3px solid darkgrey;
+  border-radius: 8px;
+  background-color: lightskyblue;
+  padding: 1em;
+}
+
+
+.final-planning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid darkgray;
+  border-radius: 8px;
+  background-color: skyblue;
+  padding: 1em;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid darkgray;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  padding: 2em;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.number-input {
+  width: 75px;
+}
+
+input {
+  padding: 1mm;
+}
+
+button {
+  padding: 2mm;
+}
+
+.title {
+  width: 100vw;
+  height: 100px; /* adjust as needed */
+  background: rgba(255, 255, 255, 0.1); /* glassy white */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid darkgray;
+  color: black; /* or whatever text color suits your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; /* make sure it stays on top */
+}
+
+.final-number-input {
+  width: 100px;
+  text-align: right;
+}
+
+.final-number-label {
+  text-align: left;
+}
